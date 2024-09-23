@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+    	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    	xmlns:d="http://schmas.microsoft.com/expression/blend/2008"
+    	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    	mc:Ignorable="d"
+    	x:Class="labwork2.MainWindow"
+    	Title="Main screen"
+    	Width="400" Height="300">
+
+	<Window.Resources>
+    	<ContextMenu x:Key="MenuContext">
+        	<MenuItem Header="Main screen"/>
+        	<MenuItem Header="Problem 1"/>
+        	<MenuItem Header="Problem 2"/>
+        	<MenuItem Header="Problem 3"/>
+        	<MenuItem Header="Problem 4"/>
+        	<MenuItem Header="Problem 5"/>
+    	</ContextMenu>
+	</Window.Resources>
+
+	<DockPanel>
+    	<Button Name="MenuButton" Content="☰" Width="40" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left"
+            	DockPanel.Dock="Top" Click="MenuButton_Click"
+            	ContextMenu="{StaticResource MenuContext}">
+    	</Button>
+
+    	<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
+        	<TextBlock Text="Вариант № 2" FontSize="20"/>
+    	</StackPanel>
+	</DockPanel>
+</Window>
