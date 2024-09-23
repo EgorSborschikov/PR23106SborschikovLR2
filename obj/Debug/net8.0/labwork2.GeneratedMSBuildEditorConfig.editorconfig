@@ -24,3 +24,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/egor/Documents/avalonia/labwork2/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/egor/Documents/avalonia/labwork2/ModuleNumbers.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

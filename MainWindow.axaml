@@ -10,11 +10,11 @@
 	<Window.Resources>
     	<ContextMenu x:Key="MenuContext">
         	<MenuItem Header="Main screen"/>
-        	<MenuItem Header="Problem 1"/>
-        	<MenuItem Header="Problem 2"/>
-        	<MenuItem Header="Problem 3"/>
-        	<MenuItem Header="Problem 4"/>
-        	<MenuItem Header="Problem 5"/>
+        	<MenuItem Header="Problem 1" Click="Problem1_Click"/>
+        	<MenuItem Header="Problem 2" Click="Problem2_Click"/>
+        	<MenuItem Header="Problem 3" Click="Problem3_Click"/>
+        	<MenuItem Header="Problem 4" Click="Problem4_Click"/>
+        	<MenuItem Header="Problem 5" Click="Problem5_Click"/>
     	</ContextMenu>
 	</Window.Resources>
 

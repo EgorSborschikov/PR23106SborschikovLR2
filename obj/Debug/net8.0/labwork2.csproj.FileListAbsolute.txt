@@ -65,3 +65,4 @@
 /home/egor/Documents/avalonia/labwork2/obj/Debug/net8.0/labwork2.csproj.Up2Date
 /home/egor/Documents/avalonia/labwork2/obj/Debug/net8.0/labwork2.genruntimeconfig.cache
 /home/egor/Documents/avalonia/labwork2/obj/Debug/net8.0/ref/labwork2.dll
+/home/egor/Documents/avalonia/labwork2/obj/Debug/net8.0/labwork2.sourcelink.json
