@@ -20,56 +20,56 @@ namespace labwork2
                 return;
             }
 
-            string[] parts = input_array_and_border.Split('.');
-            if (parts.Length < 2)
+            string[] parts_with_dot = input_array_and_border.Split('.');
+            if (parts_with_dot.Length < 2)
             {
                 resultTextBlock4.Text = "Пожалуйста, введите строку в формате 'a1 a2 ... an.b'.";
                 return;
             }
 
-            string[] numbers_str = parts[0].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            int[] numbers = new int[numbers_str.Length];
-            for (int i = 0; i < numbers_str.Length; i++)
+            string[] numbers_str_array = parts_with_dot[0].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int[] numbers_in_array = new int[numbers_str_array.Length];
+            for (int i = 0; i < numbers_str_array.Length; i++)
             {
-                if (!int.TryParse(numbers_str[i], out numbers[i]))
+                if (!int.TryParse(numbers_str_array[i], out numbers_in_array[i]))
                 {
                     resultTextBlock4.Text = "Пожалуйста, введите строку, содержащую только целые числа.";
                     return;
                 }
             }
 
-            int b;
-            if (!int.TryParse(parts[1], out b))
+            int b_border;
+            if (!int.TryParse(parts_with_dot[1], out b_border))
             {
                 resultTextBlock4.Text = "Пожалуйста, введите число b.";
                 return;
             }
 
-            int index = 0;
-            int j = numbers.Length - 1;
+            int index_array = 0;
+            int j = numbers_in_array.Length - 1;
 
-            while (index < j)
+            while (index_array < j)
             {
-                if (numbers[index] <= b)
+                if (numbers_in_array[index_array] <= b_border)
                 {
-                    index++;
+                    index_array++;
                 }
-                else if (numbers[j] > b)
+                else if (numbers_in_array[j] > b_border)
                 {
                     j--;
                 }
                 else
                 {
-                    int temp = numbers[index];
-                    numbers[index] = numbers[j];
-                    numbers[j] = temp;
-                    index++;
+                    int temp = numbers_in_array[index_array];
+                    numbers_in_array[index_array] = numbers_in_array[j];
+                    numbers_in_array[j] = temp;
+                    index_array++;
                     j--;
                 }
             }
 
-            string result = string.Join(" ", numbers);
-            resultTextBlock4.Text = "Переставленный массив: " + result;
+            string result_array = string.Join(" ", numbers_in_array);
+            resultTextBlock4.Text = "Переставленный массив: " + result_array;
         }
     }
 }
