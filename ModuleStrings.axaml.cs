@@ -28,8 +28,8 @@ namespace labwork2
 
             string[] words = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             Array.Reverse(words);
-            string reversedString = string.Join(" ", words);
-            resultTextBlock2.Text = reversedString;
+            string reversed_string = string.Join(" ", words);
+            resultTextBlock2.Text = reversed_string;
         }
     }
 }

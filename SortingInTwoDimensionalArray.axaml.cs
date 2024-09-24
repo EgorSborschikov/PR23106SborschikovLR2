@@ -22,11 +22,11 @@ namespace labwork2
             int n = int.Parse(parts[1]);
 
             _array = GenerateArray(m, n);
-            string originalArray = PrintArray(_array);
-            string ascendingArray = PrintArray(SortArray(_array, true));
-            string descendingArray = PrintArray(SortArray(_array, false));
+            string original_array = PrintArray(_array);
+            string ascending_array = PrintArray(SortArray(_array, true));
+            string descending_array = PrintArray(SortArray(_array, false));
 
-            resultTextBlock5.Text = $"Исходный массив:\n{originalArray}\n\nВ порядке возрастания:\n{ascendingArray}\n\nВ порядке убывания:\n{descendingArray}";
+            resultTextBlock5.Text = $"Исходный массив:\n{original_array}\n\nВ порядке возрастания:\n{ascending_array}\n\nВ порядке убывания:\n{descending_array}";
         }
         private int[,] GenerateArray(int m, int n)
         {
@@ -47,26 +47,26 @@ namespace labwork2
         private int[,] SortArray(int[,] array, bool ascending)
         {
 
-            int[] flatArray = array.Cast<int>().ToArray();
-            Array.Sort(flatArray);
+            int[] flat_array = array.Cast<int>().ToArray();
+            Array.Sort(flat_array);
 
             if (!ascending)
             {
-                Array.Reverse(flatArray);
+                Array.Reverse(flat_array);
             }
 
-            int[,] sortedArray = new int[array.GetLength(0), array.GetLength(1)];
+            int[,] sorted_array = new int[array.GetLength(0), array.GetLength(1)];
             int index = 0;
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    sortedArray[i, j] = flatArray[index++];
+                    sorted_array[i, j] = flat_array[index++];
                 }
             }
 
-            return sortedArray;
+            return sorted_array;
         }
 
         private string PrintArray(int[,] array)

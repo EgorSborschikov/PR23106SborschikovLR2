@@ -27,11 +27,11 @@ namespace labwork2
                 return;
             }
 
-            string[] numbersStr = parts[0].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            int[] numbers = new int[numbersStr.Length];
-            for (int i = 0; i < numbersStr.Length; i++)
+            string[] numbers_str = parts[0].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int[] numbers = new int[numbers_str.Length];
+            for (int i = 0; i < numbers_str.Length; i++)
             {
-                if (!int.TryParse(numbersStr[i], out numbers[i]))
+                if (!int.TryParse(numbers_str[i], out numbers[i]))
                 {
                     resultTextBlock4.Text = "Пожалуйста, введите строку, содержащую только целые числа.";
                     return;
