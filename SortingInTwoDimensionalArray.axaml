@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         x:Class="labwork2.SortingInTwoDimensionalArray"
+         Title="Module Sorting in two dimensional array"
+         Width="630" Height="590">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Vertical" Margin="10">
+            <TextBlock Text="Сгенерировать массив размером M столбцов и N строк," FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="содержащий числа от -10 до 10. Отобразить его пользователю." FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="Отсортировать элементы в нем по возрастанию и по убыванию." FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="Вывести результаты сортировки в двух таблицах." FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="Найти максимальный и минимальный элементы массива." FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="Введите размер двумерного массива и нажмите" Margin="0 10 0 0"/>
+            <TextBlock Text="«Рассчитать», чтобы получить результат." Margin="0 10 0 0"/>
+        </StackPanel>
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Ввод:" Margin="0 5 0 0" VerticalAlignment="Center"/>
+            <TextBox Grid.Column="1" Grid.Row="0" x:Name="inputTextBox5" Width="150" Margin="0 5 0 0" HorizontalAlignment="Left"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="Рассчитать" Click="CalculateButton5_Click" Margin="10 5 0 0" HorizontalAlignment="Right"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="Результат:" Margin="0 5 0 0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Grid.Row="1" x:Name="resultTextBlock5" Margin="0 5 0 0" HorizontalAlignment="Left"/>
+        </Grid>
+    </DockPanel>
+</Window>

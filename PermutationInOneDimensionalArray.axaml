@@ -1,0 +1,34 @@
+<Window xmlns="https://github.com/avaloniaui"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         x:Class="labwork2.PermutationInOneDimensionalArray"
+         Title="Module Permutation in one dimensional array"
+         Width="580" Height="280">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Vertical" Margin="10">
+            <TextBlock Text="Дан массив a[1..n] и число b. Переставить числа" FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="в массиве таким образом, чтобы слева от некоторой" FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="границы стояли числа, меньшие или равные b," FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="а справа от границы - большие или равные b." FontSize="18" FontWeight="Bold" Margin="0 10 0 0"/>
+            <TextBlock Text="Введите массив и нажмите «Рассчитать», чтобы получить результат." Margin="0 10 0 0"/>
+        </StackPanel>
+
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Ввод:" Margin="0 5 0 0" VerticalAlignment="Center"/>
+            <TextBox Grid.Column="1" Grid.Row="0" x:Name="inputTextBox4" Width="150" Margin="0 5 0 0" HorizontalAlignment="Left"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="Рассчитать" Click="CalculateButton4_Click" Margin="10 5 0 0" HorizontalAlignment="Right"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="Результат:" Margin="0 5 0 0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Grid.Row="1" x:Name="resultTextBlock4" Margin="0 5 0 0" HorizontalAlignment="Left"/>
+        </Grid>
+    </DockPanel>
+</Window>

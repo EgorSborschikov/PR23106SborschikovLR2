@@ -27,3 +27,15 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/egor/Documents/avalonia/labwork2/ModuleNumbers.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/egor/Documents/avalonia/labwork2/ModuleStrings.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/egor/Documents/avalonia/labwork2/PermutationInOneDimensionalArray.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/egor/Documents/avalonia/labwork2/SearchInOneDimensionalArray.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/egor/Documents/avalonia/labwork2/SortingInTwoDimensionalArray.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

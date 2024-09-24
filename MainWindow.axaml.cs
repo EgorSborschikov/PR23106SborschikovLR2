@@ -24,19 +24,23 @@ namespace labwork2
         }
         private void Problem2_Click(object sender, RoutedEventArgs e)
         {
-            
+            ModuleStrings window = new ModuleStrings();
+            window.Show();
         }
         private void Problem3_Click(object sender, RoutedEventArgs e)
         {
-            
+            SearchInOneDimensionalArray window = new SearchInOneDimensionalArray();
+            window.Show();
         }
         private void Problem4_Click(object sender, RoutedEventArgs e)
         {
-            
+            PermutationInOneDimensionalArray window = new PermutationInOneDimensionalArray();
+            window.Show();
         }
         private void Problem5_Click(object sender, RoutedEventArgs e)
         {
-            
+            SortingInTwoDimensionalArray window = new SortingInTwoDimensionalArray();
+            window.Show();
         }
     }
 }
