@@ -71,18 +71,18 @@ namespace labwork2
 
         private string PrintArray(int[,] array)
         {
-            string result = "";
+            string result_arrays = "";
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    result += array[i, j].ToString() + " ";
+                    result_arrays += array[i, j].ToString() + " ";
                 }
-                result += "\n";
+                result_arrays += "\n";
             }
 
-            return result;
+            return result_arrays;
         }
     }
 }

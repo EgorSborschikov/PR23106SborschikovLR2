@@ -13,14 +13,14 @@ namespace labwork2
 
         private void CalculateButton4_Click(object sender, RoutedEventArgs e)
         {
-            string input = inputTextBox4.Text;
-            if (string.IsNullOrWhiteSpace(input))
+            string input_array_and_border = inputTextBox4.Text;
+            if (string.IsNullOrWhiteSpace(input_array_and_border))
             {
                 resultTextBlock4.Text = "Пожалуйста, введите строку.";
                 return;
             }
 
-            string[] parts = input.Split('.');
+            string[] parts = input_array_and_border.Split('.');
             if (parts.Length < 2)
             {
                 resultTextBlock4.Text = "Пожалуйста, введите строку в формате 'a1 a2 ... an.b'.";

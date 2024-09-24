@@ -13,18 +13,18 @@ namespace labwork2
         }
         private void CalculateButton3_Click(object sender, RoutedEventArgs e)
         {
-            string input = inputTextBox3.Text;
-            if (string.IsNullOrWhiteSpace(input))
+            string input_posled = inputTextBox3.Text;
+            if (string.IsNullOrWhiteSpace(input_posled))
             {
                 resultTextBlock3.Text = "Пожалуйста, введите строку.";
                 return;
             }
 
-            string[] numbers_str = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            int[] numbers = new int[numbers_str.Length];
-            for (int i = 0; i < numbers_str.Length; i++)
+            string[] numbers_str_posled = input_posled.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int[] numbers_posled = new int[numbers_str_posled.Length];
+            for (int i = 0; i < numbers_str_posled.Length; i++)
             {
-                if (!int.TryParse(numbers_str[i], out numbers[i]))
+                if (!int.TryParse(numbers_str_posled[i], out numbers_posled[i]))
                 {
                     resultTextBlock3.Text = "Пожалуйста, введите строку, содержащую только целые числа.";
                     return;
@@ -33,9 +33,9 @@ namespace labwork2
 
             int max_length = 1;
             int start_index = 0;
-            for (int i = 1; i < numbers.Length; i++)
+            for (int i = 1; i < numbers_posled.Length; i++)
             {
-                if (numbers[i] % numbers[i - 1] == 0)
+                if (numbers_posled[i] % numbers_posled[i - 1] == 0)
                 {
                     max_length++;
                 }
@@ -56,8 +56,8 @@ namespace labwork2
             }
             else
             {
-                string result = string.Join(" ", numbers.Skip(start_index).Take(max_length));
-                resultTextBlock3.Text = "Максимально длинная подпоследовательность: " + result;
+                string result_posled = string.Join(" ", numbers_posled.Skip(start_index).Take(max_length));
+                resultTextBlock3.Text = "Максимально длинная подпоследовательность: " + result_posled;
             }
         }
     }
