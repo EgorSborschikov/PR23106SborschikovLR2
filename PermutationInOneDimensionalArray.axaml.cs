@@ -38,8 +38,8 @@ namespace labwork2
                 }
             }
 
-            int b_border;
-            if (!int.TryParse(parts_with_dot[1], out b_border))
+            int b;
+            if (!int.TryParse(parts_with_dot[1], out b))
             {
                 resultTextBlock4.Text = "Пожалуйста, введите число b.";
                 return;
@@ -50,11 +50,11 @@ namespace labwork2
 
             while (index_array < j)
             {
-                if (numbers_in_array[index_array] <= b_border)
+                if (numbers_in_array[index_array] <= b)
                 {
                     index_array++;
                 }
-                else if (numbers_in_array[j] > b_border)
+                else if (numbers_in_array[j] > b)
                 {
                     j--;
                 }
