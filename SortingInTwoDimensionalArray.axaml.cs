@@ -16,10 +16,10 @@ namespace labwork2
 
         private void CalculateButton5_Click(object sender, RoutedEventArgs e)
         {
-            string input = inputTextBox5.Text;
-            string[] parts = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            int m = int.Parse(parts[0]);
-            int n = int.Parse(parts[1]);
+            string input_dimension = inputTextBox5.Text;
+            string[] parts_dot = input_dimension.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int m = int.Parse(parts_dot[0]);
+            int n = int.Parse(parts_dot[1]);
 
             _array = GenerateArray(m, n);
             string original_array = PrintArray(_array);
@@ -56,13 +56,13 @@ namespace labwork2
             }
 
             int[,] sorted_array = new int[array.GetLength(0), array.GetLength(1)];
-            int index = 0;
+            int index_array = 0;
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    sorted_array[i, j] = flat_array[index++];
+                    sorted_array[i, j] = flat_array[index_array++];
                 }
             }
 
